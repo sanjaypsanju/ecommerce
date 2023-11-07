@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <title>hi</title>
+        <style>
+            body {
+          background-image:url('https://img.freepik.com/premium-photo/online-shopping-concept-3d-rendering_651547-364.jpg?size=626&ext=jpg&ga=GA1.1.1880011253.1699056000&semt=ais');
+          width: 100%;
+           }
+           .main{
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            background: #f2f2f2;
+            width: 50%;
+            border: 0;
+            box-sizing: border-box;
+            font-size: 14px;
+           }
+
+           #logbox{
+          padding: 10px;
+          margin: 50px auto;
+          width: 340px;
+          background-color: #fff;
+          -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+          background-size: cover;
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+        h1 {
+          text-align: center;
+          font-size: 175%;
+          color: #757575;
+          font-weight: 300;
+        }
+        h1, input {
+          font-family: "Open Sans", Helvetica, sans-serif;
+        }
+
+
+        .input {
+          width: 75%;
+          display: block;
+          margin: 0 auto 15px;
+          padding: 0 15px;
+          border: none;
+
+        }
+        .input:focus {
+          outline: none;
+          border-bottom-color: #3CC !important;
+        }
+        .input:hover {
+          border-bottom-color: #dcdcdc;
+        }
+        .input:invalid {
+          box-shadow: none;
+        }
+
+        .pass:-webkit-autofill {
+          -webkit-box-shadow: 0 0 0 1000px white inset;
+        }
+
+        .inputButton {
+          position: relative;
+          width: 95%;
+          height: 60px;
+          display: block;
+          margin: 30px auto 30px;
+          color: white;
+          background-color: rgb(71, 102, 213);
+          border: none;
+
+          -moz-box-shadow: 0 5px 0 #8f83df;
+          box-shadow: 0 5px 0 #7989cf;
+        }
+        body img {
+        width:800px;
+        height:600px;
+        }
+        .inputButton:hover {
+          top: 2px;
+          -webkit-box-shadow: 0 3px 0 #4e70e9;
+          -moz-box-shadow: 0 3px 0 #4389d9;
+          box-shadow: 0 3px 0 #387bd8;
+        }
+        .inputButton:active {
+          top: 5px;
+          box-shadow: none;
+        }
+        .inputButton:focus {
+          outline: none;
+        }
+
+
+            </style>
+    </head>
+    <body>
+        <form method="POST" >
+            {% csrf_token %}
+        <h1>user registration</h1>
+            <br>
+            <div class="col-md-6" >
+                <div id="logbox" style="background-image:url('https://img.freepik.com/free-photo/online-shopping-shopping-cart-placed-alongside-notebook-blue_1150-19158.jpg?size=626&ext=jpg&ga=GA1.1.1826414947.1699228800&semt=ais')">
+
+<label for="name" style="margin-left: 10px;" class="input pass " >name: <span style="color: #FF6347">*</span></label><br>
+<input id="name" class="main"  type="text" name="name" >
+<br><br>
+
+
+ <label for="address" style="margin-left: 10px;" class="input pass " > address:</label><br>
+<input type="address" class="main" id="address" name="address">
+<br><br>
+
+
+<label for="username" style="margin-left: 10px;" class="input pass "> UserName</label>
+<input type="text" class="main" id="username" name="username">
+<br><br>
+  <label for="password" style="margin-left: 10px;" class="input pass "> <div style="background-color: ;">Password</div></label>
+<input type="password" class="main" id="password" name="password">
+<br><br>
+
+
+<!-- SUBMIT AND RESET INFO -->
+<button type="submit"  name="submit" style="margin-left: 10px" class="inputButton">REGISTER</button>
+<!--<button type="submit" id="reset" name="register" style="margin-left: 10px">RESET</button>-->
+
+    </div>
+
+</div>
+</form>
+</body>
+</html>
